@@ -1,28 +1,31 @@
 #!/usr/bin/env python3
 
-"""Write a program to train ticket cost"""
-
-# prompt user for base cost of ticket
+# Prompt the user for base cost of ticket
 base_cost = float(input("Base? "))
 print()
 
-# prompt user for the number of additional stops
+# Promt the user for additional stops
 additional_stops = float(input("Stops? "))
 print()
 
+# Total cost
 total_cost = base_cost + additional_stops * 25
 
-# prompt user for discount percentage 
+# Promt the user for discount percentage
 discount_percentage = float(input("Discount? "))
 print()
 
-# calculate the discount amount
+# Calculate the discount amount
 discount_amount = (discount_percentage / 100) * total_cost
 
-# calculate the cost after discount
+# Cost after discount
 cost_after_discount = total_cost - discount_amount
 
-# Display the cost before discount, discount, and cost after
-print(f"Cost: ${total_cost:.2f}")
-print(f"Discount: ${discount_amount:.2f}")
-print(f"Final Cost: ${cost_after_discount:.2f}")
+# Cost before discount
+print("Cost: $" + str(round(total_cost, 2)))
+
+# Discount
+print("Discount: $" + str(round(discount_amount, 2)))
+
+# After discount, final cost
+print("Final cost: $" + str(round(cost_after_discount, 2)))
