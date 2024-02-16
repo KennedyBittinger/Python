@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+
+"""The miles per gallon program."""
+
+
+__author__ = 'Kennedy Bittinger'
+__date__ = '2/13/24'
+
+# Display a title
+print("The Miles Per Gallon program")
+print()
+
+# Get input from the user
+miles_driven = float(input("Enter miles driven: "))
+gas_used = float(input("Enter gallons of gas used: "))
+cost_per_gallon = float(input("Enter cost per gallon: "))
+
+# Calculate and round miles per gallon
+mpg = miles_driven / gas_used
+mpg = round(mpg, 2)
+
+# Calculate the total gas cost
+tgc = cost_per_gallon * gas_used
+tgc = round(tgc, 2)
+
+# Calculate the cost per mile
+cpm = tgc / miles_driven
+cpm = round(cpm, 2)
+
+# Display the results
+print()
+print(f"Miles Per Gallon:\t\t{mpg}")
+print(f"Total Gas Cost:\t\t{tgc}")
+print(f"Cost Per Mile:\t\t{cpm}")
+print("Bye!")
