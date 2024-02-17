@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+
+"""The test scores program."""
+
+__author__ = 'Kennedy Bittinger'
+__date__ = '2/16/24'
+
+#  Display a title
+print("The Test Scores program")
+print()
+print("Enter 3 test scores")
+print("======================")
+
+# Get scores from the user and accumulate the total
+score1 = int(input("Enter test score: "))
+score2 = int(input("Enter test score: "))
+score3 = int(input("Enter test score: "))
+
+total_score = score1 + score2 + score3  # Initialize the variable for accumulating scores
+
+# Calculate average score
+average_score = round(total_score / 3)
+
+# Format and display the result
+print("======================")
+print("Your Scores:", score1, score2, score3,
+      "\nTotal Score:", total_score,
+      "\nAverage Score:", average_score)
+print()
+print("Bye!")
