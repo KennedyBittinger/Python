@@ -2,7 +2,7 @@
 
 """Module to manage contacts."""
 
-__author__ = 'Karen Peterson'
+__author__ = 'Kennedy Bittinger'
 __date__ = '6/15/2020'
 
 import pathlib
